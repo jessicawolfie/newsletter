@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     dismissButton.addEventListener('click', function() {
         confirmationMessage.style.display = 'none';
         mainContentContainer.style.display = 'block'; // Mostra novamente o contêiner do conteúdo principal
-        mobileImageContainer.style.display = 'block'; // Mostra novamente a imagem
     });
 
     function isValidEmail(email) {
