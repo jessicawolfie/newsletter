@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmationMessage = document.getElementById('confirmationMessage');
     const confirmedEmail = document.getElementById('confirmedEmail');
     const dismissButton = document.getElementById('dismissButton');
+    const mobileImageContainer = document.querySelector('.mobile-image-container');
 
     newsletterForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Impede o envio do formulário
@@ -17,12 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
             mainContentContainer.style.display = 'none'; // Oculta o contêiner do conteúdo principal
             confirmationMessage.style.display = 'block'; // Exibe a mensagem de confirmação
             confirmedEmail.textContent = emailInput.value;
+            mobileImageContainer.style.display = 'none'; // Esconde a imagem
         }
     });
 
     dismissButton.addEventListener('click', function() {
         confirmationMessage.style.display = 'none';
         mainContentContainer.style.display = 'block'; // Mostra novamente o contêiner do conteúdo principal
+        mobileImageContainer.style.display = 'block'; // Mostra novamente a imagem
     });
 
     function isValidEmail(email) {

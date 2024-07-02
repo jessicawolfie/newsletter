@@ -177,12 +177,12 @@ button:hover {
         font-size: 12px;
         padding-top: 10px;
         padding-bottom: 10px;
+        text-align: left;
     }
 
     #mainContent {
-        text-align: center; /* Centraliza o conteúdo dentro do container */
+        text-align: left; 
         margin-top: 20px; /* Adiciona um espaço entre a imagem e as informações */
-        padding: 0 10%; /* Adiciona algum preenchimento lateral para a informação */
     }
 
     form {
@@ -201,21 +201,17 @@ button:hover {
     }
     
     #submitButton {
-      
         padding: 10px 15px;
-        width: 400px;
-        border-radius: 15px;    
+        width: auto;
+        max-width: 150%;
+        border-radius: 10px;    
         background-color: hsl(234, 29%, 20%);
         color: white;
         font-weight: bold;
         border: none;
-        font-size: 15px;
-        display: block; /* Garante que o botão ocupe toda a largura disponível */
+        font-size: 12px;
+        display: inline-block;
         margin: 0 auto; 
-    }
-    
-    button:hover {
-        background-color: hsl(4, 100%, 67%)
     }
     
     #emailError {
@@ -270,8 +266,5 @@ button:hover {
         width: 100%;
     }
     
-    #dismissButton:hover {
-        background-color: hsl(4, 100%, 67%)
-    }
 }
 
